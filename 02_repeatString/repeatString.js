@@ -1,6 +1,12 @@
-const repeatString = function() {
-
+const repeatString = function(word, time) {
+    words = ""
+    if(time < 0){
+        return "ERROR"
+    }
+    for(let i = 0; i < time; i++){
+        words += word;
+    }
+    return words
 };
 
-// Do not edit below this line
 module.exports = repeatString;
