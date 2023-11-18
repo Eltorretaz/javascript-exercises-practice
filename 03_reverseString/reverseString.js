@@ -1,11 +1,11 @@
 const reverseString = function(word) {
-    let reverse = "";
-    let count = word.length - 1; 
+    let string = "";
+    let count = word.length;
     for(let i = 0; i < word.length; i++){
-        reverse += word[count];
         count--;
+        string += word[count];
     }
-    return reverse;
+    return (string);
 };
 
 // Do not edit below this line

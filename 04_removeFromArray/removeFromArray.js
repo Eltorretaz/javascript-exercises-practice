@@ -1,9 +1,14 @@
-const removeFromArray = function(arr, ...manyMoreArgs) {
-    borrador = manyMoreArgs;
-    for(let i = 0; i < manyMoreArgs.length; i++){
-        arr.splice(arr.indexOf(borrador[i]));
+const removeFromArray = function(arr, ...anyMoreItems) {
+    for(let i = 0; i < anyMoreItems.length; i++){
+        index = arr.indexOf(anyMoreItems[i]);
+        if(index === -1){
+            
+        }else{
+            arr.splice(index, 1);
+        }
+        
     }
-    return arr
+return arr;
 };
 
 // Do not edit below this line
